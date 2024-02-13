@@ -4,18 +4,22 @@ function binarySearch(list, element) {
 
   let first = 0;
   let last = list.length - 1;
+  let middle;
   
-  
-
   while (first <= last) 
   {
-    let middle = Math.floor((first + last) / 2);//this is the key line that fixed my initial code, for future me, multiple sources say this is the simplest fix.
+    middle = Math.floor((first + last) / 2);//this is the key line that fixed my initial code, for future me, multiple sources say this is the simplest fix.
     //console.log(middle);
     if (list[middle] == element)
     {
       let index;
-      //console.log("found element at index:", middle);
-      index = middle;
+      for(let i = middle; list[i] == element; i--)
+        {
+          if(list[i] == element)
+          {
+            index = i;
+          }
+        }
       return index;
     } 
     else 
