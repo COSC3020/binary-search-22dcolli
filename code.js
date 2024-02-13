@@ -1,3 +1,5 @@
+list = [11, 12, 13, 14, 15, 16, 17, 18,22,24,55,251,777];
+element = 22;
 function binarySearch(list, element) 
 {
   //console.log(list);
@@ -29,5 +31,7 @@ function binarySearch(list, element)
       }
     }
   }
-    return -1;
+  return -1; // element not found
 }
+result = binarySearch(list, element);
+console.log(result);
