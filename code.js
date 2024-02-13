@@ -1,4 +1,4 @@
-
+//recieved minor fixes and help from the online IDE "Replit"'s ai editor, primarily the math.floor usage in line 11
 function binarySearch(list, element) {
   //console.log(list);
 
