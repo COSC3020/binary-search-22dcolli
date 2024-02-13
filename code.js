@@ -1,11 +1,10 @@
-list = [11, 12, 13, 14, 15, 16, 17, 18,22,24,55,251,777];
-element = 22;
-function binarySearch(list, element) 
-{
+
+function binarySearch(list, element) {
   //console.log(list);
 
   let first = 0;
   let last = list.length - 1;
+  
   
 
   while (first <= last) 
@@ -14,8 +13,10 @@ function binarySearch(list, element)
     //console.log(middle);
     if (list[middle] == element)
     {
+      let index;
       //console.log("found element at index:", middle);
-      return middle;
+      index = middle;
+      return index;
     } 
     else 
     {
@@ -33,5 +34,4 @@ function binarySearch(list, element)
   }
   return -1; // element not found
 }
-result = binarySearch(list, element);
-console.log(result);
+
